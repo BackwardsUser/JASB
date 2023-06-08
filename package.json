@@ -1,0 +1,35 @@
+{
+  "name": "jasb",
+  "version": "0.0.0",
+  "description": "Just Another Support Bot for Discord Servers",
+  "main": "./out/src/index.js",
+  "scripts": {
+    "test": "nodemon ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BackwardsUser/JASB.git"
+  },
+  "keywords": [
+    "Moderation",
+    "Discord",
+    "Bot",
+    "Staff",
+    "Administration",
+    "Support",
+    "Tool"
+  ],
+  "author": "Backwards",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BackwardsUser/JASB/issues"
+  },
+  "homepage": "https://github.com/BackwardsUser/JASB#readme",
+  "dependencies": {
+    "discord.js": "^14.11.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22",
+    "typescript": "^5.1.3"
+  }
+}

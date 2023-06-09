@@ -1,7 +1,7 @@
 {
     "TOKEN": "Replace with your token making sure your token is wrapped in quotes",
     "STAFF": {
-        "ROLES": false,
+        "ROLE": false,
         "USERS": [
             "471172695862542337",
             "Your Token",

@@ -4,7 +4,7 @@
   "description": "Just Another Support Bot for Discord Servers",
   "main": "./out/src/index.js",
   "scripts": {
-    "test": "nodemon ."
+    "test": "nodemon ./src/index.ts"
   },
   "repository": {
     "type": "git",
@@ -26,7 +26,8 @@
   },
   "homepage": "https://github.com/BackwardsUser/JASB#readme",
   "dependencies": {
-    "discord.js": "^14.11.0"
+    "discord.js": "^14.11.0",
+    "ts-node": "^10.9.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.22",

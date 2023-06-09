@@ -12,9 +12,9 @@
     },
     "BLACKLIST": [],
     "SERVER_NAME": "undefined",
-    "SERVER_COLOR": {
-        "PRIMARY": "#FFFFFF"
-    },
+    "SERVER_COLOR": [
+        "#FFFFFF"
+    ],
     "IDENTIFY_STAFF": true,
     "UPDATES_CHANNEL": {
         "CHANNEL": null,

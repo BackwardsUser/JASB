@@ -28,5 +28,15 @@
             "SUPPORT_TICKET_CREATED": false,
             "SUPPORT_TICKET_CLOSED_THREAD": false
         }
-    }
+    },
+    "EMBEDS": [
+        {
+            "NAME": "SupportRequestEmbed",
+            "DATA": {
+                "TITLE": "How can I help you?",
+                "COLOR_POS": 0,
+                "DESCRIPTION": "What would you like Support with?\nA"
+            }
+        }
+    ]
 }

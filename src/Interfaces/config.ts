@@ -22,6 +22,17 @@ interface Staff {
     USERS: string[]
 }
 
+interface EmbedData {
+    TITLE: string,
+    COLOR_POS: number,
+    DESCRIPTION: string,
+}
+
+interface Embed {
+    NAME: string,
+    DATA: EmbedData
+}
+
 export interface Config {
     TOKEN: string,
     STAFF: Staff,
@@ -30,5 +41,6 @@ export interface Config {
     SERVER_COLOR: ColorResolvable[],
     IDENTIFY_STAFF: boolean,
     UPDATES_CHANNEL: UpdatesChannel,
+    EMBEDS: Embed[]
 }
 

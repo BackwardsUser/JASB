@@ -11,5 +11,5 @@ export function SupportRequestEmbed(client: ExtendedClient, message: Message): E
     .setFooter({
         iconURL: client.user.avatarURL(),
         text: client.user.username
-    })
+    });
 }

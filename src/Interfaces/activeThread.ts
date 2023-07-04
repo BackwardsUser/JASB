@@ -1,6 +1,8 @@
+import { Status, SupportTypes } from "../Types";
+
 export interface ActiveThread {
-    UserID: string,
-    Position: number,
-    SupportStatus: "unresolved" | "active" | "resolved",
-    SupportType: "account" | "moderation" | "bug" | "other" | undefined
+    UserID: string
+    Position: number
+    SupportStatus: Status
+    SupportType: SupportTypes
 }

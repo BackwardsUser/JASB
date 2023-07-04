@@ -1,5 +1,6 @@
 {
     "TOKEN": "Replace with your token making sure your token is wrapped in quotes",
+    "PREFIX": ">>",
     "STAFF": {
         "ROLE": false,
         "USERS": [
@@ -35,7 +36,8 @@
             "DATA": {
                 "TITLE": "How can I help you?",
                 "COLOR_POS": 0,
-                "DESCRIPTION": "What would you like Support with?\nA"
+                "DESCRIPTION": "What do you need assistance with?",
+                "ACTION_ROW": true
             }
         }
     ]

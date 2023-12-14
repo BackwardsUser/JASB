@@ -17,13 +17,13 @@ The token should look like this once finished. `"TOKEN: "xxxxxxxxxxxxxxxxxxxxxxx
 #### Staff
 The staff array comes preloaded with my UserID allowing me to help debug potential issues you may be having with the bot. However you're free to remove this if you'd like.
 Any UserID's added will be able to use the bot within its DMs to respond to any incoming requests.
-To obtain a UserID, make sure Developer Mode is on within Discord (User Settings, Advanced, Developer Mode). Once this is done, right clicking any user will give you the "Copy User ID" option, just copy that into the config as demonstrated via the examples given.
+To obtain a UserID, make sure Developer Mode is on within Discord (User Settings->Advanced->Developer Mode). Once this is done, right clicking any user will give you the "Copy User ID" option, just copy that into the config as demonstrated via the examples given.
 
 You can also add users to staff via `.config users staff add "00000000000"` '00000000000' being the UserID of the staff member you'd like to add.
 
 Removing a Staff Member is done via `.config users staff remove "00000000000"`
 
-To use a "Staff" role, use the command `.config users staff role "00000000000"` '00000000000' being the RoleID of the Role you'd like to use for the Staff, which is obtained similarly as the .
+To use a "Staff" role, use the command `.config users staff role "00000000000"` '00000000000' being the RoleID of the Role you'd like to use for the Staff, which is obtained similarly as the UserID, however in the roles menu.
 This doesn't remove the UserID Staff, but adds another method of contacting them, this allows you to have whitelisted "Staff".
 
 ##### IMPORTANT
@@ -31,7 +31,7 @@ Make sure you remove the non-integer-like UserIDs from the Staff List!
 #### Server Name
 Pretty Self explanatory. Command: `.config server name "Your Server's Name"`
 #### Server Color
-What your server colors are, can be whatever you'd like, can be anything of type [ColorResolvable](https://old.discordjs.dev/#/docs/discord.js/main/typedef/ColorResolvable)
+What your server colors are, can be whatever you'd like, it must be a [ColorResolvable](https://old.discordjs.dev/#/docs/discord.js/main/typedef/ColorResolvable), (RGB Array, Hex Color Value or Discord Color code.)
 
 This Bot supports multiple color slots which can be used however you'd like (See more [here](#Colors))
 
@@ -48,8 +48,8 @@ This does not ban the user from the server. It just prevents the user from using
 (If the user is in Staff they'll still be able to use the Staff Tools.)
 
 #### Identify Staff
-This config option can be toggled via the config, but can also be done via command. `.config users staff indentify (true/false)`
-I'm on the fence of removing this option, however since it is an open source bot, and in the name of freedom I have decided not to. However I feel that there is no reason to disable this feature unless you're in a server with users who frequently search for revenge. Besides that reason transparency is huge for a community, there should be no reason certain things should be kept by community owners such as who the user is speaking to for support.
+This config option can be toggled via the config, but can also be done via command. `.config users staff identify (true/false)`
+This feature allows users to see who they're talking to, it will add their name to the bottom of the embed showing the responder's name.
 
 #### Updates Channel
 The Updates Channel has content!
@@ -68,9 +68,10 @@ Setting the channel name here to 'null' will disable the Updates Channel altoget
   * **Alert Staff** - If [Roles](#staff) are enabled it will contact the supplied role, otherwise it will contact everyone within the "Staff" Role.
   * **Support Ticket Closed** - Monitor when a support ticket is closed.
   * **Support Ticket Created** - Monitor when a user has created a Support Ticket, can be made to Alert Staff with the above setting.
-  * **Support Ticket Closed - Thread** - If "**Support Ticket Closed**" is 'false' this will do nothing. Otherwise it will provide the full thread log to alongside the "Ticket Closed" Log.
+  * **Support Ticket Closed - Thread** - If "**Support Ticket Closed**" is 'false' this will do nothing. Otherwise it will provide the full message log alongside the "Ticket Closed" Log.
 
 #### ~~Embeds~~
+Will be implementing at a later date.
 Every Embed added will be able to have basic features tweaked.
 
 Embeds can be changed via their [EmbedID](#embed-ids).

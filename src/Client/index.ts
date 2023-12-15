@@ -1,6 +1,8 @@
-import ConfigJson from "../JSON/config.development.json";
+import ConfigJson from "../JSON/config.json";
 import { Client, ClientOptions, Collection } from "discord.js";
 import { Config, Commands, Event } from "../Interfaces";
+
+import { verifyToken } from "../Scripts/cleanConfig";
 
 import { join } from "node:path";
 import { readdirSync } from "node:fs";
@@ -18,7 +20,15 @@ export default class ExtendedClient extends Client {
     public aliases: Collection<string, Commands> = new Collection();
 
     public async init() {
-        this.login(this.config.TOKEN);
+        this.login(this.config.TOKEN).catch(err => {
+            const code = err.code;
+            if (code === "TokenInvalid") {
+                verifyToken(this.config).then(() => {
+                    this.config = null;
+                    this.init();
+                });
+            };
+        });
         
         const commandPath = join(__dirname, "..", "Commands");
         readdirSync(commandPath).forEach( (dir: string) => {

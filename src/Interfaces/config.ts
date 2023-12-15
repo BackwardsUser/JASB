@@ -40,7 +40,7 @@ export interface Config {
     STAFF: Staff
     BLACKLIST: string[]
     SERVER_NAME: string
-    SERVER_COLOR: ColorResolvable[]
+    SERVER_COLOR: any
     IDENTIFY_STAFF: boolean
     UPDATES_CHANNEL: UpdatesChannel
     EMBEDS: Embed[]

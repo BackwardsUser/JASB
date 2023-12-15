@@ -1,3 +1,5 @@
+require("./Scripts/cleanConfig");
+
 import { GatewayIntentBits, Partials } from "discord.js";
 import Client from "./Client";
 

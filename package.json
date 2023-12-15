@@ -26,6 +26,7 @@
   },
   "homepage": "https://github.com/BackwardsUser/JASB#readme",
   "dependencies": {
+    "chalk": "^4.1.2",
     "discord.js": "^14.11.0",
     "ts-node": "^10.9.1"
   },

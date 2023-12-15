@@ -1,5 +1,5 @@
 {
-    "TOKEN": "Replace with your token making sure your token is wrapped in quotes",
+    "TOKEN": "NzUyOTgxMzQ0NzUzMjg3MjQ1.GaQw9T.xt1tHVT0VXkixiHK6A8WY6P-_J8pQfqEIsEC1g",
     "PREFIX": ">>",
     "STAFF": {
         "ROLE": false,
@@ -14,7 +14,12 @@
     "BLACKLIST": [],
     "SERVER_NAME": "undefined",
     "SERVER_COLOR": [
-        "#FFFFFF"
+        "#FFFFFF",
+        [
+            1,
+            2,
+            3
+        ]
     ],
     "IDENTIFY_STAFF": true,
     "UPDATES_CHANNEL": {

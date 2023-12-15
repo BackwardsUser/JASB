@@ -1,12 +1,14 @@
-import ConfigJson from "../JSON/config.json";
+// import ConfigJson from "../JSON/config.json";
+import { readdirSync } from "node:fs";
+import { join } from "node:path";
+
+const DevConfig = readdirSync(join(__dirname, "..", "JSON")).filter(file => file.startsWith("config.development"));
+const ConfigJson: Config = (DevConfig) ? require(join(__dirname, "..", "config.development.json")) : require(join(__dirname, "..", "config.json"));
+
 import { Client, ClientOptions, Collection } from "discord.js";
 import { Config, Commands, Event } from "../Interfaces";
 
 import { verifyToken } from "../Scripts/cleanConfig";
-
-import { join } from "node:path";
-import { readdirSync } from "node:fs";
-
 
 export default class ExtendedClient extends Client {
 

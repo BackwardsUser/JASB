@@ -131,3 +131,8 @@ dist
 
 # Development files
 *.development.* 
+
+# Config file.
+# Don't need to be reuploading this config file unless it has an update.
+# Adding to gitignore to prevent token uploading
+config.json
